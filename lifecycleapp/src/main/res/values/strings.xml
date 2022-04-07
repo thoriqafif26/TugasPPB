@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">lifecycleapp</string>
+    <string name="change_page">Change Page 2</string>
+</resources>

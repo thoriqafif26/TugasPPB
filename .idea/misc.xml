@@ -3,9 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/app/practice5activity/src/main/res/layout/activity_practice5.xml" value="0.16893115942028986" />
         <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/app/src/main/res/layout/activity_practice5.xml" value="0.16304347826086957" />
         <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/lifecycleapp/src/main/res/layout/activity_halaman_dua.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/lifecycleapp/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/practice5activity/src/main/res/layout/activity_practice5.xml" value="0.16893115942028986" />
+        <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/praktikum5/src/main/res/layout/activity_practice5.xml" value="0.22" />
+        <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/praktikum5/src/main/res/layout/activity_practice5_for_fragment.xml" value="0.16893115942028986" />
+        <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/praktikum5/src/main/res/layout/activity_practice5_read_data.xml" value="0.2" />
+        <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/praktikum5/src/main/res/layout/fragment_practice5_first.xml" value="0.16893115942028986" />
+        <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/praktikum5/src/main/res/layout/fragment_practice5_read_data.xml" value="0.1" />
       </map>
     </option>
   </component>

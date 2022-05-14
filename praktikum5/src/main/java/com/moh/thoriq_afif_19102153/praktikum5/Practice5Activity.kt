@@ -15,14 +15,19 @@ import kotlinx.android.synthetic.main.activity_practice5.*
 
 class Practice5Activity : AppCompatActivity() {
     val CALL_REQUEST_CODE = 100
+
     @SuppressLint("MissingPermission")
     private fun setupPermissions() {
-        val permission = ContextCompat.checkSelfPermission(this,
-            Manifest.permission.CALL_PHONE)
+        val permission = ContextCompat.checkSelfPermission(
+            this,
+            Manifest.permission.CALL_PHONE
+        )
         if (permission != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this,
+            ActivityCompat.requestPermissions(
+                this,
                 arrayOf(Manifest.permission.CALL_PHONE),
-                CALL_REQUEST_CODE)
+                CALL_REQUEST_CODE
+            )
         }
     }
 
@@ -30,43 +35,45 @@ class Practice5Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setupPermissions()
         setContentView(R.layout.activity_practice5)
-        btnProdi.setOnClickListener{
-            val namaProdi = inputProdi.text.toString()
-            if (namaProdi.isEmpty()) {
-            inputProdi.error = getString(R.string.error_input_prodi)
-                return@setOnClickListener
+        btnProdi.setOnClickListener {
+            btnProdi.setOnClickListener {
+                val namaProdi = inputProdi.text.toString()
+                if (namaProdi.isEmpty()) {
+                    inputProdi.error = "Prodi Tidak Boleh Kosong"
+                    return@setOnClickListener
+                }
+                val moveWithDataIntent =
+                    Intent(this@Practice5Activity, Practice5ReadDataActivity::class.java)
+                moveWithDataIntent.putExtra(Practice5ReadDataActivity.EXTRA_PRODI, namaProdi)
+                startActivity(moveWithDataIntent)
             }
-            val moveWithDataIntent = Intent(this@Practice5Activity, Practice5ReadDataActivity::class.java)
-            moveWithDataIntent.putExtra(Practice5ReadDataActivity.EXTRA_PRODI, namaProdi)
-            startActivity(moveWithDataIntent)
-        }
-
-        btnCallBrowser.setOnClickListener{
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse("http://ittelkom-pwt.ac.id/")
-            startActivity(intent)
-        }
-
-        btnCallCamera.setOnClickListener{
-            val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-            startActivity(intent)
-        }
-
-        btnCallPhone.setOnClickListener{
-            val phoneNumber = inputPhoneNumber.getText()
-            if (phoneNumber.isEmpty()) {
-                inputPhoneNumber.error = "Nomor Telpon Tidak Boleh Kosong"
-                return@setOnClickListener
+            btnCallBrowser.setOnClickListener {
+                val intent = Intent(Intent.ACTION_VIEW)
+                intent.data = Uri.parse("http://ittelkom-pwt.ac.id/")
+                startActivity(intent)
             }
-            val intent = Intent(Intent.ACTION_CALL)
-            intent.data = Uri.parse("tel:" + phoneNumber)
-            startActivity(intent)
-        }
 
-        btnFragment.setOnClickListener{
-            val intent = Intent(this, Practice5ForFragmentActivity::class.java)
-            startActivity(intent)
-        }
+            btnCallCamera.setOnClickListener {
+                val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+                startActivity(intent)
+            }
 
+            btnCallPhone.setOnClickListener {
+                val phoneNumber = inputPhoneNumber.getText()
+                if (phoneNumber.isEmpty()) {
+                    inputPhoneNumber.error = "Nomor Telpon Tidak Boleh Kosong"
+                    return@setOnClickListener
+                }
+                val intent = Intent(Intent.ACTION_CALL)
+                intent.data = Uri.parse("tel:" + phoneNumber)
+                startActivity(intent)
+            }
+
+            btnFragment.setOnClickListener {
+                val intent = Intent(this, Practice5ForFragmentActivity::class.java)
+                startActivity(intent)
+            }
+
+        }
     }
 }

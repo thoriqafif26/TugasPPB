@@ -61,8 +61,13 @@
         <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/praktikum_14/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/praktikum_14/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/praktikum_14/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/praktikum_14/src/main/res/layout/fragment_class_quotes.xml" value="0.1" />
+        <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/praktikum_14/src/main/res/layout/fragment_global_quotes.xml" value="0.1" />
+        <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/praktikum_14/src/main/res/layout/fragment_my_quotes.xml" value="0.1" />
+        <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/praktikum_14/src/main/res/layout/item_quote.xml" value="0.1" />
         <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/praktikum_14/src/main/res/menu/menu_delete.xml" value="0.1" />
         <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/praktikum_14/src/main/res/menu/menu_form.xml" value="0.1" />
+        <entry key="..\:/Users/Thoriq Afif/AndroidStudioProjects/MyProject/praktikum_14/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>
     </option>
   </component>
